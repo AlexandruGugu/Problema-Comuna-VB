@@ -1,5 +1,5 @@
 ﻿Public Class UsersForm
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+    Private Sub UsersForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
 End Class

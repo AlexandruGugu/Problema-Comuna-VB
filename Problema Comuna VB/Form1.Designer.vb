@@ -26,7 +26,8 @@ Partial Class Form1
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.editUsers = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'OpenFileDialog1
@@ -51,21 +52,31 @@ Partial Class Form1
         Me.Button3.Text = "Salvare rezultat"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Button2
+        'editUsers
         '
-        Me.Button2.Location = New System.Drawing.Point(32, 160)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(95, 39)
-        Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Modificare utilizatori"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.editUsers.Location = New System.Drawing.Point(32, 160)
+        Me.editUsers.Name = "editUsers"
+        Me.editUsers.Size = New System.Drawing.Size(95, 39)
+        Me.editUsers.TabIndex = 3
+        Me.editUsers.Text = "Modificare utilizatori"
+        Me.editUsers.UseVisualStyleBackColor = True
+        Me.editUsers.Visible = False
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(32, 217)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(95, 34)
+        Me.Button4.TabIndex = 4
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1124, 465)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.editUsers)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
@@ -77,5 +88,6 @@ Partial Class Form1
     Friend WithEvents Button1 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
-    Friend WithEvents Button2 As Button
+    Friend WithEvents editUsers As Button
+    Friend WithEvents Button4 As Button
 End Class

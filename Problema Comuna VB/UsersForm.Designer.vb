@@ -22,21 +22,21 @@ Partial Class UsersForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.dgv = New System.Windows.Forms.DataGridView()
         Me.Nume = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Parola = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nivel = New System.Windows.Forms.DataGridViewComboBoxColumn()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'DataGridView1
+        'dgv
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nume, Me.Parola, Me.Nivel})
-        Me.DataGridView1.Location = New System.Drawing.Point(430, 23)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(343, 408)
-        Me.DataGridView1.TabIndex = 0
+        Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nume, Me.Parola, Me.Nivel})
+        Me.dgv.Location = New System.Drawing.Point(430, 23)
+        Me.dgv.Name = "dgv"
+        Me.dgv.Size = New System.Drawing.Size(343, 408)
+        Me.dgv.TabIndex = 0
         '
         'Nume
         '
@@ -62,15 +62,15 @@ Partial Class UsersForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1268, 525)
-        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.dgv)
         Me.Name = "UsersForm"
         Me.Text = "UsersForm"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgv As DataGridView
     Friend WithEvents Nume As DataGridViewTextBoxColumn
     Friend WithEvents Parola As DataGridViewTextBoxColumn
     Friend WithEvents Nivel As DataGridViewComboBoxColumn

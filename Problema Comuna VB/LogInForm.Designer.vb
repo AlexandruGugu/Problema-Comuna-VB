@@ -22,27 +22,27 @@ Partial Class LogInForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.nume = New System.Windows.Forms.TextBox()
+        Me.pwd = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'TextBox1
+        'nume
         '
-        Me.TextBox1.Location = New System.Drawing.Point(164, 97)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(168, 20)
-        Me.TextBox1.TabIndex = 0
+        Me.nume.Location = New System.Drawing.Point(164, 97)
+        Me.nume.Name = "nume"
+        Me.nume.Size = New System.Drawing.Size(168, 20)
+        Me.nume.TabIndex = 0
         '
-        'TextBox2
+        'pwd
         '
-        Me.TextBox2.Location = New System.Drawing.Point(164, 145)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(168, 20)
-        Me.TextBox2.TabIndex = 1
-        Me.TextBox2.UseSystemPasswordChar = True
+        Me.pwd.Location = New System.Drawing.Point(164, 145)
+        Me.pwd.Name = "pwd"
+        Me.pwd.Size = New System.Drawing.Size(168, 20)
+        Me.pwd.TabIndex = 1
+        Me.pwd.UseSystemPasswordChar = True
         '
         'Label1
         '
@@ -79,8 +79,8 @@ Partial Class LogInForm
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.pwd)
+        Me.Controls.Add(Me.nume)
         Me.Name = "LogInForm"
         Me.Text = "LogInForm"
         Me.ResumeLayout(False)
@@ -88,8 +88,8 @@ Partial Class LogInForm
 
     End Sub
 
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents nume As TextBox
+    Friend WithEvents pwd As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
