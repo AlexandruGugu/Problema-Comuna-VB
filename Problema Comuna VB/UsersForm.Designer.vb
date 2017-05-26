@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class UsersForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,48 +20,47 @@ Partial Class UsersForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.dgv = New System.Windows.Forms.DataGridView()
-        Me.Nume = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Parola = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Nivel = New System.Windows.Forms.DataGridViewComboBoxColumn()
+        Me.addUser = New System.Windows.Forms.Button()
+        Me.delUser = New System.Windows.Forms.Button()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'dgv
         '
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Nume, Me.Parola, Me.Nivel})
-        Me.dgv.Location = New System.Drawing.Point(430, 23)
+        Me.dgv.Location = New System.Drawing.Point(136, 24)
         Me.dgv.Name = "dgv"
-        Me.dgv.Size = New System.Drawing.Size(343, 408)
+        Me.dgv.Size = New System.Drawing.Size(821, 408)
         Me.dgv.TabIndex = 0
         '
-        'Nume
+        'addUser
         '
-        Me.Nume.HeaderText = "Nume"
-        Me.Nume.Name = "Nume"
+        Me.addUser.Location = New System.Drawing.Point(1069, 171)
+        Me.addUser.Name = "addUser"
+        Me.addUser.Size = New System.Drawing.Size(75, 23)
+        Me.addUser.TabIndex = 1
+        Me.addUser.Text = "Adauga"
+        Me.addUser.UseVisualStyleBackColor = True
         '
-        'Parola
+        'delUser
         '
-        Me.Parola.HeaderText = "Parola"
-        Me.Parola.Name = "Parola"
-        Me.Parola.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable
-        '
-        'Nivel
-        '
-        Me.Nivel.HeaderText = "Nivel"
-        Me.Nivel.Items.AddRange(New Object() {"Admin", "User", "Guest"})
-        Me.Nivel.Name = "Nivel"
-        Me.Nivel.Resizable = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Nivel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic
+        Me.delUser.Location = New System.Drawing.Point(1069, 233)
+        Me.delUser.Name = "delUser"
+        Me.delUser.Size = New System.Drawing.Size(75, 23)
+        Me.delUser.TabIndex = 2
+        Me.delUser.Text = "Sterge"
+        Me.delUser.UseVisualStyleBackColor = True
         '
         'UsersForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1268, 525)
+        Me.Controls.Add(Me.delUser)
+        Me.Controls.Add(Me.addUser)
         Me.Controls.Add(Me.dgv)
         Me.Name = "UsersForm"
         Me.Text = "UsersForm"
@@ -71,7 +70,6 @@ Partial Class UsersForm
     End Sub
 
     Friend WithEvents dgv As DataGridView
-    Friend WithEvents Nume As DataGridViewTextBoxColumn
-    Friend WithEvents Parola As DataGridViewTextBoxColumn
-    Friend WithEvents Nivel As DataGridViewComboBoxColumn
+    Friend WithEvents addUser As Button
+    Friend WithEvents delUser As Button
 End Class

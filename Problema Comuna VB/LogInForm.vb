@@ -37,6 +37,9 @@
     End Function
 
     Private Sub LogInForm_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If listaUtilizatori.Count = 0 Then
+            Exit Sub
+        End If
         Dim bytes As Byte() = Serialize(listaUtilizatori)
         IO.File.WriteAllBytes(Application.StartupPath + "\\Users.bin", bytes)
     End Sub

@@ -88,5 +88,9 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles editUsers.Click
         UsersForm.ShowDialog()
+        While UsersForm.redeschide = True
+            UsersForm.redeschide = False
+            UsersForm.ShowDialog()
+        End While
     End Sub
 End Class
