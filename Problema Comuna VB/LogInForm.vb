@@ -7,6 +7,8 @@
             listaUtilizatori = Deserialize(Of List(Of User))(bytes)
         Else
             listaUtilizatori.Add(New User("Alex", "1234", User.accessLevel.Owner))
+            listaUtilizatori.Add(New User("Ioana", "1234", User.accessLevel.Admin))
+            listaUtilizatori.Add(New User("Fish", "1234", User.accessLevel.User))
         End If
         Dim index As Integer = listaUtilizatori.FindIndex(Function(p) p.nume = nume.Text And p.pwd = pwd.Text)
         If index <> -1 Then
