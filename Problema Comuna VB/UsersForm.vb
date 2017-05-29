@@ -6,7 +6,7 @@
             Exit Sub
         End If
 
-        dgv.AutoSize = True
+        'dgv.AutoSize = True
         dgv.AutoGenerateColumns = False
         dgv.DataSource = LogInForm.listaUtilizatori
 
@@ -25,8 +25,6 @@
         combo.DataPropertyName = "access"
         combo.Name = "nivel"
         dgv.Columns.Add(combo)
-
-
 
 
 

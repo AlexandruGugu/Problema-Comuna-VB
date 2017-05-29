@@ -8,7 +8,7 @@
         Else
             listaUtilizatori.Add(New User("Alex", "1234", User.accessLevel.Owner))
             listaUtilizatori.Add(New User("Ioana", "1234", User.accessLevel.Admin))
-            listaUtilizatori.Add(New User("Fish", "1234", User.accessLevel.User))
+            listaUtilizatori.Add(New User("Fishu", "1234", User.accessLevel.User))
         End If
         Dim index As Integer = listaUtilizatori.FindIndex(Function(p) p.nume = nume.Text And p.pwd = pwd.Text)
         If index <> -1 Then
@@ -17,6 +17,10 @@
             Form1.AddOwnedForm(Me)
             If nivel = User.accessLevel.Owner Or nivel = User.accessLevel.Admin Then
                 Form1.editUsers.Show()
+                Form1.read.Show()
+                Form1.save.Show()
+            ElseIf nivel = User.accessLevel.User Then
+                Form1.read.Show()
             End If
             Hide()
         End If

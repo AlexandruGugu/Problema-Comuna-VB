@@ -23,38 +23,41 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.read = New System.Windows.Forms.Button()
+        Me.save = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.editUsers = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.analiza = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
-        'Button1
+        'read
         '
-        Me.Button1.Location = New System.Drawing.Point(32, 38)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 39)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Selectare Fisier"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.read.Location = New System.Drawing.Point(42, 66)
+        Me.read.Name = "read"
+        Me.read.Size = New System.Drawing.Size(94, 39)
+        Me.read.TabIndex = 0
+        Me.read.Text = "Incarca din fisier"
+        Me.read.UseVisualStyleBackColor = True
+        Me.read.Visible = False
         '
-        'Button3
+        'save
         '
-        Me.Button3.Location = New System.Drawing.Point(32, 97)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(95, 42)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Salvare rezultat"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.save.Location = New System.Drawing.Point(42, 129)
+        Me.save.Name = "save"
+        Me.save.Size = New System.Drawing.Size(95, 42)
+        Me.save.TabIndex = 2
+        Me.save.Text = "Salvare in fisier"
+        Me.save.UseVisualStyleBackColor = True
+        Me.save.Visible = False
         '
         'editUsers
         '
-        Me.editUsers.Location = New System.Drawing.Point(32, 160)
+        Me.editUsers.Location = New System.Drawing.Point(41, 240)
         Me.editUsers.Name = "editUsers"
         Me.editUsers.Size = New System.Drawing.Size(95, 39)
         Me.editUsers.TabIndex = 3
@@ -62,32 +65,45 @@ Partial Class Form1
         Me.editUsers.UseVisualStyleBackColor = True
         Me.editUsers.Visible = False
         '
-        'Button4
+        'analiza
         '
-        Me.Button4.Location = New System.Drawing.Point(32, 217)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(95, 34)
-        Me.Button4.TabIndex = 4
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.analiza.Location = New System.Drawing.Point(41, 332)
+        Me.analiza.Name = "analiza"
+        Me.analiza.Size = New System.Drawing.Size(95, 34)
+        Me.analiza.TabIndex = 4
+        Me.analiza.Text = "Analiza text"
+        Me.analiza.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(311, 66)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both
+        Me.TextBox1.Size = New System.Drawing.Size(465, 300)
+        Me.TextBox1.TabIndex = 5
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1124, 465)
-        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.analiza)
         Me.Controls.Add(Me.editUsers)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.save)
+        Me.Controls.Add(Me.read)
         Me.Name = "Form1"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents read As Button
+    Friend WithEvents save As Button
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents editUsers As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents analiza As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class
